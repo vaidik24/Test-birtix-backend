@@ -21,7 +21,7 @@ app.all('/bitrix-handler', (req, res) => {
     }
 
     // Redirect to React frontend with Bitrix data
-    const frontendUrl = 'https://f96254440c6f.ngrok-free.app'; // 🔁 Replace with your actual frontend ngrok URL
+    const frontendUrl = 'https://test-birtix-frontend.vercel.app/'; // 🔁 Replace with your actual frontend ngrok URL
 
     const redirectUrl = `${frontendUrl}?auth_id=${authId}&domain=${domain}&user_id=${userId}`;
     console.log('Redirecting to:', redirectUrl);
