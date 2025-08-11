@@ -70,6 +70,10 @@ app.get('/get-deals', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the Bitrix24 Integration Backend');
+});
+
 app.listen(PORT, () => {
     console.log(`Backend running at http://localhost:${PORT}`);
 });
